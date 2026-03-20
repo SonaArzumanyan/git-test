@@ -14,7 +14,7 @@ jobs:
          uses: actions/checkout@v3
 
        - name: Print greeting
-         run: echo "Hello from Sona's CI/CD pipeline!!!!"
+         run: echo "Hello from Sona's CI/CD pipeline!!!! Nice to see you here!!"
 
        - name: Print current date and time
          run: date
