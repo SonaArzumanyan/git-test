@@ -3,7 +3,7 @@ name: "CI Assignment - Sona"
 on:
   push:
     branches:
-      -assignment-06-07-CI-CD-Sona-Arzumanyan
+      - assignment-06-07-CI-CD-Sona-Arzumanyan
 
 jobs: 
   build:
@@ -26,7 +26,7 @@ jobs:
             git diff --name-only origin/master HEAD > changed_files.txt
             cat changed_files.txt
 
-            if grep -q "sona-ci.yml" changed_files.txt; then 
+            if grep -q "SonaArzumanyan-ci.yml" changed_files.txt; then 
               echo "Success: Workflow file changed!"
             else 
               echo "Failure: Workflow file not changed!"
